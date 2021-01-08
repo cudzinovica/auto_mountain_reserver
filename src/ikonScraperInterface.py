@@ -187,6 +187,9 @@ def checkForOpenings(driver, datesAvailable):
 	if they become available.
 	"""
 
+	# check for specific reservations
+	checkSpecificReservation(driver, "Brighton", 2, 27, 2021)	
+
 	# connect to database
 	db = mysql.connector.connect( host=SQL_HOST, user=SQL_USERNAME, 
 		 password=SQL_PASSWORD, database=SQL_DB)
