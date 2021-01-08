@@ -212,7 +212,7 @@ def checkForOpenings(driver, datesAvailable):
 						# get day of week
 						dayOfWeek = datetime.date(year, month, day).strftime("%A")
 						# send alert
-						emailInterface.sendDateToReserveAlertEmail("jjohnson11096@gmail.com", mountain, monthsToCheck[month], str(day), str(year), dayOfWeek)
+						emailInterface.sendDateToReserveAlertEmail("cudzinovica+auto_mtn_rsrv@gmail.com", mountain, monthsToCheck[month], str(day), str(year), dayOfWeek)
 						# refresh scraper
 						selectMountain(driver, mountain)
 						selectMonth(driver, monthsToCheck[month], year)
@@ -222,7 +222,7 @@ def checkForOpenings(driver, datesAvailable):
 						# get day of week
 						dayOfWeek = datetime.date(year, month, day).strftime("%A")
 						# send alerts
-						emailInterface.sendReservationOpenAlertEmail("mantoadgoat@gmail.com", mountain, monthsToCheck[month], str(day), str(year), dayOfWeek)
+						emailInterface.sendReservationOpenAlertEmail("cudzinovica+auto_mtn_rsrv@gmail.com", mountain, monthsToCheck[month], str(day), str(year), dayOfWeek)
 						# add to list
 						datesAvailable.append([mountain, month, day, year])
 				else:
@@ -317,4 +317,4 @@ def checkSpecificReservation(driver, mountain, month, day, year):
 		# get day of week
 		dayOfWeek = datetime.date(year, month, day).strftime("%A")
 		# send alert
-		emailInterface.sendEmailAlert("jjohnson11096@gmail.com", mountain, monthsToCheck[month], str(day), str(year), dayOfWeek)
+		emailInterface.sendEmailAlert("cudzinovica+auto_mtn_rsrv@gmail.com", mountain, monthsToCheck[month], str(day), str(year), dayOfWeek)

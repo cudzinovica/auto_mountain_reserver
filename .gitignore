@@ -1,2 +1,6 @@
 debug.log
 chromedriver.exe
+__pycache__/
+
+# for virtualenv users
+/venv/
