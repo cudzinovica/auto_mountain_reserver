@@ -224,7 +224,7 @@ def checkForOpenings(driver, datesAvailable):
 								shouldReserve = False
 						if dbIkonEmailsAsStr:
 							dbIkonEmails = dbIkonEmailsAsStr.split(',')
-							if ikon_email not in dbIkonEmails:
+							if ikonEmail not in dbIkonEmails:
 								shouldReserve = False
 
 						if shouldReserve:
