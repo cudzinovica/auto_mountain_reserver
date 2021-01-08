@@ -47,7 +47,7 @@ def sendErrorEmail(error):
 	"""
 	FROMADDR = "mtnrezalert@gmail.com"
 	PASSWORD = "wakeupsheeple123!"
-	TOADDRS  = ["cudzinovica+auto_mtn_rsrv@gmail.com"]
+	TOADDRS  = ["cudzinovica+mtnrezalert@gmail.com"]
 	SUBJECT  = "Error occurred on server!"
 
 	msg = ("From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n"
