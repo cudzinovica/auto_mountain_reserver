@@ -153,7 +153,7 @@ def isDayAvailable(driver, month, day, year):
 	    EC.presence_of_element_located((By.XPATH, '//div[contains(@aria-label,"' + month + ' ' + dayFormatted + '")]')))
 	except:
 		print("Error: Timed out")
-		emailInterface.sendErrorEmail("Error checking day availability for " + month + " " + day  + " for " + ikonEmail)
+		emailInterface.sendErrorEmail("Error checking day availability for " + month + " " + dayFormatted  + " for " + ikonEmail)
 		sys.exit()
 
 	# print if day is available or not
